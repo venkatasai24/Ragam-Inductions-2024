@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar sans">
+        <div class="ragam">
+            <div>R</div>
+            <div>A</div>
+            <div>G</div>
+            <div>A</div>
+            <div>M</div>
+        </div>
+        <div class="links">
+            <a onclick="scrollToTarget(`home`)">HOME</a>
+            <a onclick="scrollToTarget(`contact`)">CONTACT US</a>
+        </div>
+    </div>
+    <div class="main">
+        <div id="home" class="home">
+            <div>
+                <h1>Ragam ‘24 Tech-Team
+                    Inductions</h1>
+                <div class="sans" style="font-size: 1.5rem;word-spacing:5px;">
+                    <p>Embrace the challenges that lie ahead, as you become part of a
+                        community dedicated to pushing
+                        boundaries
+                        and shaping the fest. </p>
+                    <button>Explore <i class="fa-solid fa-arrow-left-long fa-rotate-by"
+                            style="--fa-rotate-angle: 135deg;margin-left:5px;""></i></button>
+                    </div>
+                </div>
+                <div>
+                    <img class=" asset" src="asset.jpeg" alt="asset">
+                </div>
+            </div>
+        </div>
+        <div class="learn sans">
+            Learn more
+            <i class="fa-solid fa-chevron-down" onclick="scrollToTarget(`aboutus`)"></i>
+        </div>
+    </div>
+    <div id="aboutus" class="aboutus">
+        <div>
+            <img class="asset" src="asset.jpeg" alt="asset">
+        </div>
+        <div>
+            <h1>About us</h1>
+            <div class="sans" style="font-size: 1.5rem;word-spacing:5px;">
+                <p>
+                    The quick brown fox jumped over the lazy dog. Meanwhile, a gentle breeze rustled the leaves on
+                    the
+                    trees, creating a soothing melody. Birds chirped in the distance, adding to the natural symphony
+                    of
+                    the
+                    surroundings. As the sun began to set, casting warm hues across the horizon, the world seemed to
+                    embrace
+                    a sense of tranquility.
+                </p>
+                <p>As the sun began to set, casting warm hues across the horizon, the world seemed to embrace a
+                    sense of
+                    tranquility. In this serene moment, one could appreciate the beauty of nature and the simplicity
+                    of
+                    life.</p>
+            </div>
+        </div>
+    </div>
+    <div class="joinus">
+        <div class="joinus-content">
+            <h1>Join us</h1>
+            <p style="font-size: 1.5rem;" class="sans">Embark on a journey with us and become
+                part of a vibrant tech
+                team, where
+                innovation meets collaboration.
+                Join us and contribute to something extraordinary!</p>
+            <div style="font-size: 1.5rem;" class="sans">
+                <p>1. Invaluable Experience</p>
+                <p>2. Work with the latest technologies and frameworks</p>
+                <p>3. Collaborate with others</p>
+                <p>4. Be part of the biggest cultural fest of South India</p>
+            </div>
+        </div>
+        <div class="joinus-email sans">
+            <i class="fa fa-envelope"></i>
+            <p style="letter-spacing: 2px;">EMAIL</p>
+            <p style="color: gray;">
+                contactus@nitc.ac.in
+            </p>
+        </div>
+    </div>
+    <div class="contactus" id="contact">
+        <div style="width: 100%;">
+            <h1>Contact us</h1>
+        </div>
+        <div class="contact-cards sans">
+            <div class="joinus-email">
+                <i class="fa fa-phone"></i>
+                <p style="letter-spacing: 2px;">BY PHONE</p>
+                <p style="color: gray;">
+                    +91 9994058168
+                </p>
+            </div>
+            <div class="joinus-email">
+                <i class="fa fa-map-marker"></i>
+                <p style="letter-spacing: 2px;">FIND US</p>
+                <p style="color: gray;text-align: center;">
+                    National Institute of Technology Calicut, Kerala 673601
+                </p>
+            </div>
+            <div class="joinus-email">
+                <i class="fa fa-envelope"></i>
+                <p style="letter-spacing: 2px;">BY EMAIL</p>
+                <p style="color: gray;">
+                    contactus@nitc.ac.in
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-nitc-ragam">
+            <div>
+                <img class="nitc" src="nitc_icon.png" alt="nitc">
+            </div>
+            <div class="ragam sans">
+                <div>R</div>
+                <div>A</div>
+                <div>G</div>
+                <div>A</div>
+                <div>M</div>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="sans" style="text-align: center;margin-bottom:2rem;">
+            <b>National Institute of Technology, Calicut</b>
+            <p>Calicut Mukkam Road, Kattangal</p>
+            <p>Kerala 673601</p>
+        </div>
+    </div>
+    <script>
+        function scrollToTarget(target) {
+            const targetElement = document.getElementById(target);
+            targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>

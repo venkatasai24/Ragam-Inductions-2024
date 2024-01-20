@@ -1,0 +1,280 @@
+/*navbar*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  padding: 0rem 1rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.ragam {
+  display: flex;
+}
+
+.ragam div {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: black;
+  padding: 0.25rem;
+  margin: 1rem 1px;
+  width: 2rem; /* Set the desired width */
+  height: 2rem; /* Set the desired height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  color: black;
+  cursor: pointer;
+}
+
+/*home*/
+
+.main {
+  max-height: 100dvh;
+}
+
+.home {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.learn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.learn i {
+  margin: 1rem;
+  transition: all 0.3s ease;
+}
+
+.learn i:hover {
+  transform: translateY(10px);
+}
+
+/*aboutus*/
+
+.aboutus {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.asset {
+  height: 20rem;
+  width: 20rem;
+  margin: 0rem 3rem;
+}
+
+/*joinus*/
+
+.joinus {
+  display: flex;
+  margin: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.joinus-email {
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+
+.joinus-email i {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/*contact-us*/
+
+.contactus {
+  margin: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*footer*/
+
+.footer {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-nitc-ragam {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Add this line to center items vertically */
+  margin-top: 2rem;
+}
+
+.nitc {
+  height: 7rem;
+  width: 7rem;
+  margin: 0rem 2rem;
+}
+
+.icons i {
+  font-size: 2rem;
+  margin: 2rem 1.5rem;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  /*navbar*/
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .ragam div {
+    font-size: 1rem;
+    margin: 0.5rem 1px;
+    width: 1rem; /* Set the desired width */
+    height: 1rem; /* Set the desired height */
+  }
+
+  .links a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  /*home*/
+
+  .home {
+    margin: 2rem;
+    flex-wrap: wrap-reverse;
+  }
+
+  .learn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /*aboutus*/
+
+  .aboutus {
+    margin: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .asset {
+    height: 10rem;
+    width: 10rem;
+    margin: 1.5rem;
+  }
+
+  /*joinus*/
+
+  .joinus {
+    margin: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .joinus-email {
+    padding: 2rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  /*contact-us*/
+
+  .contactus {
+    margin: 2rem;
+  }
+
+  /*footer*/
+
+  .footer-nitc-ragam {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Add this line to center items vertically */
+    margin-top: 2rem;
+  }
+
+  .nitc {
+    height: 3rem;
+    width: 3rem;
+    margin: 0rem 1rem;
+  }
+
+  .icons i {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+}
